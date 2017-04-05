@@ -27,7 +27,7 @@ function generatePropType(type) {
     values = '(' +
       type.value.map(function(typeValue) {
         return typeValue.name || typeValue.value;
-      }).join('|') +
+      }).join('&#124;') +
       ')';
   } else {
     values = type.value;
