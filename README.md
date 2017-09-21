@@ -1,4 +1,5 @@
-**NOTE: This module is under active development**
+**NOTE: This module is copy of [https://github.com/mihalik/react-storybook-addon-docgen](this addon). All credits go to the author.
+I made a new version, since the owner is not updating the project anymore and it didn't work with storybook v3.**
 
 # React Storybook Docgen Addon
 
@@ -9,18 +10,15 @@ A React Storybook addon to show documentation generated with docgen.
 ## Usage
 
 Install the following module:
-**NOTE: This module will move to NPM once API has stabilized**
 
 ```sh
-npm i -D mihalik/react-storybook-addon-docgen
+yarn add storybook-addon-docgen
 ```
 
-Create an `addons.js` file within your storybook config directory:
+Add this line in `addons.js` file within your storybook config directory:
 
 ```js
-import '@kadira/storybook/addons';
-import 'react-storybook-addon-docgen/register';
-
+require('react-storybook-addon-docgen/register');
 ```
 
 Then add a decorator to your stories.
@@ -38,6 +36,7 @@ storiesOf('ButtonSimple')
 
 ## React native storybook
 If you are using react native storybook and this addon doesn't work for you, it means that your .babelrc file is missing plugin.
+
 ```
 "plugins": [
     ["react-docgen", { "DOC_GEN_COLLECTION_NAME": "STORYBOOK_REACT_CLASSES"}]

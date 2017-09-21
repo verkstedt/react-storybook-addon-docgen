@@ -1,10 +1,10 @@
 {
-  "name": "react-storybook-addon-docgen",
-  "version": "3.3.0",
+  "name": "storybook-addon-docgen",
+  "version": "4.0.0",
   "description": "A React Storybook addon to display docgen information.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mihalik/react-storybook-addon-docgen.git"
+    "url": "https://github.com/gongreg/react-storybook-addon-docgen.git"
   },
   "license": "MIT",
   "scripts": {
@@ -31,8 +31,5 @@
     "github-markdown-css": "^2.4.1",
     "marked": "^0.3.6"
   },
-  "main": "dist/index.js",
-  "engines": {
-    "npm": "^3.0.0"
-  }
+  "main": "dist/index.js"
 }
