@@ -1,6 +1,6 @@
 import React from 'react';
 import marked from 'marked';
-import '!style!css!github-markdown-css/github-markdown.css';
+import '!style-loader!css-loader!github-markdown-css/github-markdown.css';
 
 import generateMarkdown from './components/generateMarkdown';
 
@@ -24,7 +24,7 @@ export default class DocPanel extends React.Component {
   }
 
   componentDidMount() {
-    
+
     this.props.channel.on(EVENT_ID, this._listener);
   }
 

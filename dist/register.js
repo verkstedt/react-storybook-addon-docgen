@@ -4,9 +4,9 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _storybookAddons = require('@kadira/storybook-addons');
+var _addons = require('@storybook/addons');
 
-var _storybookAddons2 = _interopRequireDefault(_storybookAddons);
+var _addons2 = _interopRequireDefault(_addons);
 
 var _DocPanel = require('./DocPanel');
 
@@ -16,9 +16,9 @@ var _constants = require('./constants');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_storybookAddons2.default.register(_constants.ADDON_ID, function (api) {
-  var channel = _storybookAddons2.default.getChannel();
-  _storybookAddons2.default.addPanel(_constants.PANEL_ID, {
+_addons2.default.register(_constants.ADDON_ID, function (api) {
+  var channel = _addons2.default.getChannel();
+  _addons2.default.addPanel(_constants.PANEL_ID, {
     title: 'Docs',
     render: function render() {
       return _react2.default.createElement(_DocPanel2.default, { channel: channel, api: api });

@@ -32,7 +32,7 @@ var _marked = require('marked');
 
 var _marked2 = _interopRequireDefault(_marked);
 
-require('!style!css!github-markdown-css/github-markdown.css');
+require('!style-loader!css-loader!github-markdown-css/github-markdown.css');
 
 var _generateMarkdown = require('./components/generateMarkdown');
 
