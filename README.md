@@ -1,5 +1,5 @@
 **NOTE: This module is copy of [this addon](https://github.com/mihalik/react-storybook-addon-docgen). All credits go to the author.
-I made a new version, since the owner is not updating the project anymore and it didn't work with storybook v3.**
+I made a new version, since the owner is not updating the project anymore and it didn't work with storybook v3. Also there is more functionality added.**
 
 # React Storybook Docgen Addon
 
@@ -33,6 +33,12 @@ storiesOf('ButtonSimple')
 ```
 
 > Have a look at [this example](example/story.js) stories to see the example usage.
+
+## Derived Components
+
+You can add static values on react classes, which tell which component this component derives from.
+It works similiar to derives property on react-docgen, but this way you save yourself from long chains of dependencies.
+
 
 ## React native storybook
 If you are using react native storybook and this addon doesn't work for you, it means that your .babelrc file is missing plugin.
