@@ -1,4 +1,4 @@
-**NOTE: This module is copy of [https://github.com/mihalik/react-storybook-addon-docgen](this addon). All credits go to the author.
+**NOTE: This module is copy of [this addon](https://github.com/mihalik/react-storybook-addon-docgen). All credits go to the author.
 I made a new version, since the owner is not updating the project anymore and it didn't work with storybook v3.**
 
 # React Storybook Docgen Addon
